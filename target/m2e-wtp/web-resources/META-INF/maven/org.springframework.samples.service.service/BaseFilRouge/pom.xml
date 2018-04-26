@@ -104,5 +104,13 @@
 			<scope>test</scope>
 		</dependency>
 
+		<!-- Added -->
+		<dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-orm</artifactId>
+            <version>${spring-framework.version}</version> 
+        </dependency>
+
+
 	</dependencies>	
 </project>
