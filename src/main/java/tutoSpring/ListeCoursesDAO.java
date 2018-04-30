@@ -25,4 +25,8 @@ public class ListeCoursesDAO implements IListeCoursesDAO {
 		 
 		 return lTypedQuery.getResultList();
 	 }// END Rechercher Liste Courses
+	 
+	 public void creeCourse(final Course pCourse) {
+		 entityManager.persist(pCourse);
+	 }//END Crée une Course
 }

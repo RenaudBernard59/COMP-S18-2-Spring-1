@@ -16,4 +16,12 @@ public class ServiceListeCourses implements IServiceListeCourses {
 	public List<Course> rechercherCourses() {
 		return dao.rechercherCourses();
 	}
+	
+	@Transactional
+	public void creeCourse(final String pLibelle, final Integer pQuantite) {
+		final Course lCourse = new Course();
+		lCourse.setLibelle(pLibelle);
+		lCourse.setQuantite(pQuantite);
+		dao.creeCourse(lCourse);
+	}
 }
