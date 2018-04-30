@@ -6,9 +6,20 @@
 <html>
 <head>
 
-<title><spring:message code="titre.listecourses"/></title>
+<title><spring:message code="titre.creation.elementcourses"/></title>
 </head>
 <body>
+<form:form method="post" modelAttribute="creation" action="creerCreationListeCourses">
+	<spring:message code="creation.elementcourses.libelle.libelle" />
+	<form: input path="libelle" />
+	<b><i><form:error patch="libelle" cssclass="error" /></i></b><br/>
+	
+	<spring:message code="creation.elementcourses.libelle.quantite" />
+	<form: input path="quantite" />
+	<b><i><form:error patch="quantite" cssclass="error" /></i></b><br/>
+	<input type="submit"/>
+</form>
+
 <table border="1">
 	<thead>
 	<tr>
