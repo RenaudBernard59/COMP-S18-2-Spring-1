@@ -14,6 +14,7 @@
 			<th><spring:message code="colonne.identifiant"/></th>
 			<th><spring:message code="colonne.libelle"/></th>
 			<th><spring:message code="colonne.quantite"/></th>
+			<th>&nbsp;</th>
 		</tr>
 		</thead>
 		<tbody>
@@ -23,8 +24,8 @@
 				<td><c:out value="${courses.libelle}" /></td>
 				<td><c:out value="${courses.quantite}" /></td>
 				<td>
-					<c:url value="/supprimerSuppressionListeCoirses" var="url">
-						<c:param name="idCourse" value="${course.id}" />
+					<c:url value="/supprimerSuppressionListeCourses" var="url">
+						<c:param name="idCourse" value="${courses.id}" />
 					</c:url>
 					<a href="${url}">
 						<spring:message code="suppression.supprimer.libelle" />

@@ -27,5 +27,6 @@ public class ServiceListeCourses implements IServiceListeCourses {
 	public void supprimerCourse(final Integer pIdCourse) {
 		final Course lCourse = new Course();
 		lCourse.setId(pIdCourse);
+		dao.supprimerCourse(lCourse);
 	}
 }
