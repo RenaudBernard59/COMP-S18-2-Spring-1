@@ -10,7 +10,7 @@ public class ModificationForm {
 	public void setListeCourses(final List<ModificationCourse> pListeCourses) {
 		listeCourses = pListeCourses;
 	}
-	public void List<ModificationCourse> getListeCourses() {
+	public List<ModificationCourse> getListeCourses() {
 		return listeCourses;
 	}
 }

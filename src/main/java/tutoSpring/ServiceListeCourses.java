@@ -31,8 +31,8 @@ public class ServiceListeCourses implements IServiceListeCourses {
 	}
 	
 	@Transactional
-	public void modiferCourse(final List<Course> pListeCourses) {
-		for(fnal Course lCourse : pListeCourses) {
+	public void modifierCourse(final List<Course> pListeCourses) {
+		for(final Course lCourse : pListeCourses) {
 			dao.modifierCourse(lCourse);
 		}
 	}

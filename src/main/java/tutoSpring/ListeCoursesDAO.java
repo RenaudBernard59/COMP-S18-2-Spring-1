@@ -1,17 +1,14 @@
 package tutoSpring;
 
-import java.beans.Expression;
+
 import java.util.List;
 
-import javax.management.Query;
+import javax.persistence.*;
 import javax.persistence.EntityManager;
 import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
-import javax.persistence.criteria.CriteriaBuilder;
-import javax.persistence.criteria.CriteriaQuery;
-import javax.persistence.criteria.CriteriaUpdate;
-import javax.persistence.criteria.Path;
-import javax.persistence.criteria.Root;
+import javax.persistence.criteria.*;
+
 import javax.validation.constraints.Pattern;
 
 import org.springframework.stereotype.Repository;
@@ -38,7 +35,7 @@ public class ListeCoursesDAO implements IListeCoursesDAO {
 		 final Course lCourse = entityManager.getReference(Course.class, pCourse.getId());
 		 entityManager.remove(lCourse);
 	 }// END supprimer Course
-	 public void modiferCourse(final Course pCourse) {
+	 public void modifierCourse(final Course pCourse) {
 		 final CriteriaBuilder lCriteriaBuilder = entityManager.getCriteriaBuilder();
 		 final CriteriaUpdate<Course> lCriteriaUpdate = lCriteriaBuilder.createCriteriaUpdate(Course.class);
 		 final Root<Course> lRoot = lCriteriaUpdate.from(Course.class);
