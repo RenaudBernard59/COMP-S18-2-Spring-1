@@ -1,6 +1,5 @@
 package tutoSpring;
 import javax.validation.constraints.Pattern;
-
 import org.hibernate.validator.constraints.NotEmpty;
 
 public class CreationForm {
