@@ -6,4 +6,5 @@ public interface IListeCoursesDAO {
 	List<Course> rechercherCourses();
 	void creeCourse(final Course pCourse);
 	void supprimerCourse(final Course pCourse);
+	void modifierCourse(final Course pCourse);
 }
