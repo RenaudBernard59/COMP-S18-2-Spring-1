@@ -9,7 +9,7 @@ import javax.persistence.PersistenceContext;
 import javax.persistence.TypedQuery;
 import javax.persistence.criteria.*;
 
-import javax.validation.constraints.Pattern;
+
 
 import org.springframework.stereotype.Repository;
 

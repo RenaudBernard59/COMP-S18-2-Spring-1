@@ -23,24 +23,24 @@
 				<tr>
 					<td>
 						<c:out value="${courses.id}" />
-						<input type="hidden" name="listeCourses[${status.inde}].id" value="${course.id}" />
+						<input type="hidden" name="listeCourses[${status.index}].id" value="${course.id}" />
 					</td>
 					<td>
 						<c:out value="${courses.libelle}" />
-						<input type="hidden" name="listeCourses[${status.inde}].libelle" value="${course.libelle}" />
+						<input type="hidden" name="listeCourses[${status.index}].libelle" value="${course.libelle}" />
 					</td>
 					<td>
 						<c:out value="${courses.quantite}" />
-						<input type="hidden" name="listeCourses[${status.inde}].quantite" value="${course.quantite}" />
+						<input type="hidden" name="listeCourses[${status.index}].quantite" value="${course.quantite}" />
 						<br/>
-						<b><i><form:errors path="listeCourses[${status.inde}].quantite"/></i></b>
+						<b><i><form:errors path="listeCourses[${status.index}].quantite"/></i></b>
 					</td>
 				</tr>
 			</c:forEach>
 		</tbody>
 	</table>
 	<input type="submit"/>
-</form>
+</form:form>
 
 </body>
 </html>
